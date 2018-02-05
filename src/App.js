@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
 import fire from './config/fire';
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import About from './components/About';
+
+// import LogsContainer from './containers/LogsContainer';
 
 class App extends Component {
+//   render() {
+//     return (
+//       <div className="App">
+//         <Switch>
+//           <Route exact path='/' component={ About }/>
+//           {/*}<Route path='/logs' component={ LogsContainer }/>*/}
+//         </Switch>
+//       </div>
+//     );
+//   }
+// }
+
+
+////////////////
+// Testing DB //
+///////////////
   constructor(props) {
     super(props);
     this.state = { messages: [] }; // <- set up react state
@@ -24,17 +44,23 @@ class App extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.addMessage.bind(this)}>
-        <input type="text" ref={ el => this.inputEl = el }/>
-        <input type="submit"/>
-        <ul>
-          { /* Render the list of messages */
-            this.state.messages.map( message => <li key={message.id}>{message.text}</li> )
-          }
-        </ul>
-      </form>
+      <div className="App">
+          <Switch>
+            <Route exact path='/' component={ About }/>
+            {/*}<Route path='/logs' component={ LogsContainer }/>*/}
+          </Switch>
+          <form onSubmit={this.addMessage.bind(this)}>
+            <input type="text" ref={ el => this.inputEl = el }/>
+            <input type="submit"/>
+            <ul>
+              { /* Render the list of messages */
+                this.state.messages.map( message => <li key={message.id}>{message.text}</li> )
+              }
+            </ul>
+          </form>
+      </div>
     );
   }
 }
-
+///////////////////
 export default App;
