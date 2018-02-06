@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import About from './components/About';
 import Header from './components/Header';
 import Resources from './components/Resources';
+import Logs from './components/Logs';
 
 // import LogsContainer from './containers/LogsContainer';
 
@@ -38,7 +39,7 @@ class App extends Component {
           <Header/>
           <Switch>
             <Route exact path='/' component={ About }/>
-            {/*}<Route path='/logs' component={ Lo }/>*/}
+            <Route path='/logs' component={ Logs }/>
           </Switch>
           <Resources/>
           <form onSubmit={this.addMessage.bind(this)}>
