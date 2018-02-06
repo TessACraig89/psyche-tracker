@@ -3,23 +3,12 @@ import fire from './config/fire';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import About from './components/About';
-import Header from './components/Header'
+import Header from './components/Header';
+import Resources from './components/Resources';
 
 // import LogsContainer from './containers/LogsContainer';
 
 class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <Switch>
-//           <Route exact path='/' component={ About }/>
-//           {/*}<Route path='/logs' component={ LogsContainer }/>*/}
-//         </Switch>
-//       </div>
-//     );
-//   }
-// }
-
 
 ////////////////
 // Testing DB //
@@ -51,6 +40,7 @@ class App extends Component {
             <Route exact path='/' component={ About }/>
             {/*}<Route path='/logs' component={ Lo }/>*/}
           </Switch>
+          <Resources/>
           <form onSubmit={this.addMessage.bind(this)}>
             <input type="text" ref={ el => this.inputEl = el }/>
             <input type="submit"/>
