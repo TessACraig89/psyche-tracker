@@ -3,6 +3,7 @@ import fire from './config/fire';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import About from './components/About';
+import Header from './components/Header'
 
 // import LogsContainer from './containers/LogsContainer';
 
@@ -45,9 +46,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+          <Header/>
           <Switch>
             <Route exact path='/' component={ About }/>
-            {/*}<Route path='/logs' component={ LogsContainer }/>*/}
+            {/*}<Route path='/logs' component={ Lo }/>*/}
           </Switch>
           <form onSubmit={this.addMessage.bind(this)}>
             <input type="text" ref={ el => this.inputEl = el }/>
