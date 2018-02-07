@@ -1,17 +1,43 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
+import { Table } from 'reactstrap';
+
 
 class Log extends Component {
   render() {
     return (
-      <div>
-				<Link class="toAboutLink" to={'/about'}>CLICK HERE TO LEARN MORE ABOUT PSYCHE TRACKER</Link>
-        <h1 class="logsTitle">Logs</h1>
-				<button><i className="fa fa-plus-circle">ADD A NEW LOG</i></button>
-      </div>
+      <Table bordered>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </Table>
     );
   }
 }
-
 export default Log;

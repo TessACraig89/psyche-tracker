@@ -6,6 +6,7 @@ import About from './components/About';
 import Header from './components/Header';
 import Resources from './components/Resources';
 import Logs from './components/Logs';
+import { Button } from 'reactstrap';
 
 // import LogsContainer from './containers/LogsContainer';
 
