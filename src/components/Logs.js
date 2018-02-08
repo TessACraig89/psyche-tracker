@@ -38,8 +38,6 @@ class Logs extends Component{
 				// <span className="AddBtn" onClick={()=> this.handleAddLog(this.Id)}><i className="fa fa-plus-circle">ADD A NEW LOG</i></span>
         <CreateLogForm/>
         <div className="logs">
-          {/*logs*/}
-          <Log/>
         </div>
       </div>
     )
