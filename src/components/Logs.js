@@ -200,6 +200,10 @@ class Logs extends Component{
       [e.target.name]: e.target.value
     });
   }
+  removeLog(logId) {
+    const logRef = firebase.database().ref(`/logs/${logId}`);
+    logRef.remove();
+  }
       render() {
         return (
           <div className='logPage'>
@@ -276,7 +280,7 @@ class Logs extends Component{
                                   <th>          </th>
                                   <th>          </th>
                                   <th>
-                                    <button>DELETE </button>
+                                    <button onClick={() => this.removeLog(log.id)}>DELETE</button>
                                   </th>
                                 </tr>
                               </thead>
