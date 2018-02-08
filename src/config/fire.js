@@ -1,8 +1,7 @@
 import firebase from 'firebase'
-var api_key = process.env.API_KEY;
 
 var config = {
-    apiKey: api_key,
+    apiKey: export "AIzaSyAib3rcnjy_-oJLtdCcssKIFjuvN7z-AGY"
     authDomain: "psyche-tracker.firebaseapp.com",
     databaseURL: "https://psyche-tracker.firebaseio.com",
     projectId: "psyche-tracker",
