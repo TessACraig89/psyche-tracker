@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import { Table } from 'reactstrap';
 import PropTypes from 'prop-types';
+import Comments from './Comments';
+import Ratings from './Ratings';
 
 class Log extends Component {
   constructor(props){
