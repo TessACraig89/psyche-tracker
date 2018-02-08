@@ -7,6 +7,8 @@ class Logs extends Component{
   constructor() {
     super();
     this.state = {
+      //data
+      date: '',
       // comments
       comment1: '',
       comment2: '',
@@ -23,8 +25,7 @@ class Logs extends Component{
       rating5: '',
       rating6: '',
       rating7: '',
-      //data
-      date: ''
+      logs: []
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDateChange = this.handleDateChange.bind(this);
@@ -44,12 +45,44 @@ class Logs extends Component{
     this.handleRating5Change = this.handleRating5Change.bind(this);
     this.handleRating6Change = this.handleRating6Change.bind(this);
     this.handleRating7Change = this.handleRating7Change.bind(this);
-  }
+    }
+    componentDidMount() {
+      const logsRef = firebase.database().ref('logs');
+      logsRef.on('value', (snapshot) => {
+        let logs = snapshot.val();
+        let newState = [];
+        for (let log in logs) {
+          newState.push({
+            id: log,
+            date: logs[log].date,
+            //comments
+            comment1: logs[log].comment1,
+            comment2: logs[log].comment2,
+            comment3: logs[log].comment3,
+            comment4: logs[log].comment4,
+            comment5: logs[log].comment5,
+            comment6: logs[log].comment6,
+            comment7: logs[log].comment7,
+            //ratings
+            rating1: logs[log].rating1,
+            rating2: logs[log].rating2,
+            rating3: logs[log].rating3,
+            rating4: logs[log].rating4,
+            rating5: logs[log].rating5,
+            rating6: logs[log].rating6,
+            rating7: logs[log].rating7
+          });
+        }
+        this.setState({
+          logs: newState
+        });
+      });
+    }
   //////////////////////////////////////////////////////////////////
   handleSubmit(e) {
     e.preventDefault();
-    const itemsRef = firebase.database().ref('items');
-    const item = {
+    const logsRef = firebase.database().ref('logs');
+    const log = {
       date: this.state.date,
       //comments
       comment1: this.state.comment1,
@@ -68,7 +101,7 @@ class Logs extends Component{
       rating6: this.state.rating6,
       rating7: this.state.rating7,
     }
-    itemsRef.push(item);
+    logsRef.push(log);
     this.setState({
       date: '',
       //comments
@@ -177,7 +210,7 @@ class Logs extends Component{
                 </div>
             </header>
             <div className='container'>
-              <section className='add-item'>
+              <section className='add-log'>
                   <form onSubmit={this.handleSubmit}>
                     <Table responsive>
                       <thead>
@@ -225,9 +258,61 @@ class Logs extends Component{
                     </Table>
                   </form>
               </section>
-              <section className='display-item'>
+              <section className='display-log'>
                 <div className='wrapper'>
-                  <ul className='logs'>
+                  <ul>
+                    {this.state.logs.map((log) => {
+                        return (
+                          <li key={log.id}>
+                            <Table responsive>
+                              <thead>
+                                <tr>
+                                  <th>
+                                    <button>EDIT</button>
+                                  </th>
+                                  <th>          </th>
+                                  <th>          </th>
+                                  <th>{log.date}</th>
+                                  <th>          </th>
+                                  <th>          </th>
+                                  <th>
+                                    <button>DELETE </button>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Exhaustion</td>
+                                  <td>Hunger</td>
+                                  <td>Anxiety</td>
+                                  <td>Anger</td>
+                                  <td>Mania</td>
+                                  <td>Depression</td>
+                                  <td>Stress</td>
+                                </tr>
+                                <tr> {/* reference column rating data */}
+                                  <td>{log.rating1}</td>
+                                  <td>{log.rating2}</td>
+                                  <td>{log.rating3}</td>
+                                  <td>{log.rating4}</td>
+                                  <td>{log.rating5}</td>
+                                  <td>{log.rating6}</td>
+                                  <td>{log.rating7}</td>
+                                </tr>
+                                <tr>  {/* reference column comment data */}
+                                  <td>Comment: {log.comment1}</td>
+                                  <td>Comment: {log.comment2}</td>
+                                  <td>Comment: {log.comment3}</td>
+                                  <td>Comment: {log.comment4}</td>
+                                  <td>Comment: {log.comment5}</td>
+                                  <td>Comment: {log.comment6}</td>
+                                  <td>Comment: {log.comment7}</td>
+                                </tr>
+                              </tbody>
+                            </Table>
+                          </li>
+                      )
+                    })}
                   </ul>
                 </div>
               </section>
