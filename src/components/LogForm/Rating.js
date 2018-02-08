@@ -1,1 +1,0 @@
-// render single rating

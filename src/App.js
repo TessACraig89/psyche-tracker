@@ -20,7 +20,6 @@ class App extends Component {
             <Route path='/logs' component={ Logs }/>
           </Switch>
           <Resources/>
-
       </div>
     );
   }
