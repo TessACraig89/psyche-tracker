@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import { Table } from 'reactstrap';
 import firebase from '../config/fire.js';
+import css from '../Logs.css';
 
 class Logs extends Component{
   constructor() {
@@ -224,7 +225,7 @@ class Logs extends Component{
                           </th>
                           <th>          </th>
                           <th>          </th>
-                          <th><input type="text" name="date" placeholder="date" onChange={this.handleDateChange} value={this.state.date}/></th>
+                          <th><input type="text" name="date" placeholder=" / / " onChange={this.handleDateChange} value={this.state.date}/></th>
                           <th>          </th>
                           <th>          </th>
                           <th></th>
