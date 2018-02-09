@@ -1,40 +1,86 @@
+
+
 .App {
   text-align: center;
   background-color: #bbabfc;
   display: flex;
   flex-wrap: wrap;
 }
-
+/* HEADER */
 .header {
   border: solid 2px red;
   width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
 }
-
+/* RESOURCES */
 .resources {
   width: 30%;
   border: solid 2px blue;
   padding: 20px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
 }
 
 .resourcesTitle {
   border: solid black 2px;
 }
 
-.about {
-  width: 70%;
-  border: solid black 2px;
-  padding: 20px;
-}
-
 ul {
   list-style-type: none;
 }
 
+.listItem1Link {
+
+}
+/* ABOUT PAGE */
+.about {
+  width: 70%;
+  border: solid black 2px;
+  padding: 20px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+}
+
+/* LOG PAGE */
 input {
   width: 100%;
 }
 
-.table-responsive {
+.logPage {
+  width: 70%;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+}
+
+.add-log {
   background: white;
   border: solid black;
+}
+
+.addedTable {
+  background: white;
+  border: solid black;
+  position: relative;
+  right: 20px;
+}
+
+.toAboutLink {
+  color: black;
+}
+
+.deletebtn {
+  border: solid black 2px;
+  border-radius: 15px;
+}
+
+.addBtn {
+  border: solid black 2px;
+  border-radius: 15px;
+}
+
+.yingyangBlk {
+
+}
+
+.yingyangWht {
 }

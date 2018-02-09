@@ -213,14 +213,16 @@ class Logs extends Component{
                     <Link class="toAboutLink" to={'/'}>CLICK HERE TO LEARN MORE ABOUT PSYCHE TRACKER</Link>
                 </div>
             </header>
-            <div className='container'>
+            <h1 className="addTitle">Add To Your Logs</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
+            <div className='tbContainer'>
               <section className='add-log'>
                   <form onSubmit={this.handleSubmit}>
                     <Table responsive>
                       <thead>
                         <tr>
                           <th>
-                            <button>ADD</button>
+                            <button className="addBtn">ADD</button>
                           </th>
                           <th>          </th>
                           <th>          </th>
@@ -269,20 +271,19 @@ class Logs extends Component{
                     {this.state.logs.map((log) => {
                         return (
                           <li key={log.id}>
+                          <div className="addedTable">
                             <Table responsive>
                               <thead>
                                 <tr>
                                   <th>
-                                    <button>EDIT</button>
+                                    <button className="deletebtn" onClick={() => this.removeLog(log.id)}>DELETE</button>
                                   </th>
                                   <th>          </th>
                                   <th>          </th>
                                   <th>{log.date}</th>
                                   <th>          </th>
                                   <th>          </th>
-                                  <th>
-                                    <button onClick={() => this.removeLog(log.id)}>DELETE</button>
-                                  </th>
+                                  <th>          </th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -315,6 +316,7 @@ class Logs extends Component{
                                 </tr>
                               </tbody>
                             </Table>
+                          </div>
                           </li>
                       )
                     })}
