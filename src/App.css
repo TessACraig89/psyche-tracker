@@ -78,12 +78,18 @@ input {
 
 .add-log {
   background: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 .addedTable {
   background: white;
   position: relative;
   right: 20px;
+  background: white;
+  border: solid black 2px;
+  border-radius: 10px;
 }
 
 .toAboutLink {
