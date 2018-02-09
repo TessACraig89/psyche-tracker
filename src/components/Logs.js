@@ -213,8 +213,9 @@ class Logs extends Component{
                     <Link class="toAboutLink" to={'/'}>CLICK HERE TO LEARN MORE ABOUT PSYCHE TRACKER</Link>
                 </div>
             </header>
+
             <h1 className="addTitle">Add To Your Logs</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys<br></br> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make<br></br> a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
             <div className='tbContainer'>
               <section className='add-log'>
                   <form onSubmit={this.handleSubmit}>
@@ -226,7 +227,7 @@ class Logs extends Component{
                           </th>
                           <th>          </th>
                           <th>          </th>
-                          <th><input type="text" name="date" placeholder="/ / " onChange={this.handleDateChange} value={this.state.date}/></th>
+                          <th><input type="text" name="date" placeholder="Date" onChange={this.handleDateChange} value={this.state.date}/></th>
                           <th>          </th>
                           <th>          </th>
                           <th></th>
@@ -243,22 +244,22 @@ class Logs extends Component{
                           <td>Stress</td>
                         </tr>
                         <tr> {/* reference column rating data */}
-                          <td>Rating:<input type="text" name="rating1" placeholder="rating1" onChange={this.handleRating1Change} value={this.state.rating1}/></td>
-                          <td>Rating:<input type="text" name="rating2" placeholder="rating2" onChange={this.handleRating2Change} value={this.state.rating2}/></td>
-                          <td>Rating:<input type="text" name="rating3" placeholder="rating3" onChange={this.handleRating3Change} value={this.state.rating3}/></td>
-                          <td>Rating:<input type="text" name="rating4" placeholder="rating4" onChange={this.handleRating4Change} value={this.state.rating4}/></td>
-                          <td>Rating:<input type="text" name="rating5" placeholder="rating5" onChange={this.handleRating5Change} value={this.state.rating5}/></td>
-                          <td>Rating:<input type="text" name="rating6" placeholder="rating6" onChange={this.handleRating6Change} value={this.state.rating6}/></td>
-                          <td>Rating:<input type="text" name="rating7" placeholder="rating7" onChange={this.handleRating7Change} value={this.state.rating7}/></td>
+                          <td>Rating:<input type="text" name="rating1" placeholder="" onChange={this.handleRating1Change} value={this.state.rating1}/></td>
+                          <td>Rating:<input type="text" name="rating2" placeholder="" onChange={this.handleRating2Change} value={this.state.rating2}/></td>
+                          <td>Rating:<input type="text" name="rating3" placeholder="" onChange={this.handleRating3Change} value={this.state.rating3}/></td>
+                          <td>Rating:<input type="text" name="rating4" placeholder="" onChange={this.handleRating4Change} value={this.state.rating4}/></td>
+                          <td>Rating:<input type="text" name="rating5" placeholder="" onChange={this.handleRating5Change} value={this.state.rating5}/></td>
+                          <td>Rating:<input type="text" name="rating6" placeholder="" onChange={this.handleRating6Change} value={this.state.rating6}/></td>
+                          <td>Rating:<input type="text" name="rating7" placeholder="" onChange={this.handleRating7Change} value={this.state.rating7}/></td>
                         </tr>
                         <tr>  {/* reference column comment data */}
-                          <td>Comment: <input type="text" name="comment1" placeholder="comment1" onChange={this.handleComment1Change} value={this.state.comment1}/></td>
-                          <td>Comment: <input type="text" name="comment2" placeholder="comment2" onChange={this.handleComment2Change} value={this.state.comment2}/></td>
-                          <td>Comment: <input type="text" name="comment3" placeholder="comment3" onChange={this.handleComment3Change} value={this.state.comment3}/></td>
-                          <td>Comment: <input type="text" name="comment4" placeholder="comment4" onChange={this.handleComment4Change} value={this.state.comment4}/></td>
-                          <td>Comment: <input type="text" name="comment5" placeholder="comment5" onChange={this.handleComment5Change} value={this.state.comment5}/></td>
-                          <td>Comment: <input type="text" name="comment6" placeholder="comment6" onChange={this.handleComment6Change} value={this.state.comment6}/></td>
-                          <td>Comment: <input type="text" name="comment7" placeholder="comment7" onChange={this.handleComment7Change} value={this.state.comment7}/></td>
+                          <td>Comment: <input type="text" name="comment1" placeholder="" onChange={this.handleComment1Change} value={this.state.comment1}/></td>
+                          <td>Comment: <input type="text" name="comment2" placeholder="" onChange={this.handleComment2Change} value={this.state.comment2}/></td>
+                          <td>Comment: <input type="text" name="comment3" placeholder="" onChange={this.handleComment3Change} value={this.state.comment3}/></td>
+                          <td>Comment: <input type="text" name="comment4" placeholder="" onChange={this.handleComment4Change} value={this.state.comment4}/></td>
+                          <td>Comment: <input type="text" name="comment5" placeholder="" onChange={this.handleComment5Change} value={this.state.comment5}/></td>
+                          <td>Comment: <input type="text" name="comment6" placeholder="" onChange={this.handleComment6Change} value={this.state.comment6}/></td>
+                          <td>Comment: <input type="text" name="comment7" placeholder="" onChange={this.handleComment7Change} value={this.state.comment7}/></td>
                         </tr>
                       </tbody>
                     </Table>

@@ -1,71 +1,103 @@
-
-
 .App {
   text-align: center;
   background-color: #bbabfc;
   display: flex;
   flex-wrap: wrap;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
 }
 /* HEADER */
 .header {
-  border: solid 2px red;
   width: 100%;
-  font-family: 'Josefin Sans', sans-serif;
+  height: 170px;
+  border-bottom: solid black 2px;
+}
+
+.headerText {
+  width: 60%;
+  position: relative;
+  bottom: 140px;
+  left: 250px;
+}
+
+.yingyangBlk {
+  position: relative;
+  right: 500px;
+
+}
+
+.yingyangWht {
+  position: relative;
+  left: 500px;
+  bottom: 295px;
 }
 /* RESOURCES */
 .resources {
   width: 30%;
-  border: solid 2px blue;
   padding: 20px;
-  font-family: 'Josefin Slab', serif;
   font-weight: bold;
-}
-
-.resourcesTitle {
-  border: solid black 2px;
+  margin-top: 20px;
 }
 
 ul {
   list-style-type: none;
 }
 
-.listItem1Link {
-
+.listItem {
+  color: black;
 }
+
 /* ABOUT PAGE */
 .about {
   width: 70%;
-  border: solid black 2px;
   padding: 20px;
-  font-family: 'Josefin Slab', serif;
   font-weight: bold;
+}
+
+.devLink {
+  color: black;
 }
 
 /* LOG PAGE */
 input {
   width: 100%;
+  border: solid black 2px;
+  border-radius: 15px;
+  text-align: center;
+  color: black;
 }
 
 .logPage {
   width: 70%;
-  font-family: 'Josefin Slab', serif;
   font-weight: bold;
+}
+
+.addTitle {
+  margin-top: 20px;
 }
 
 .add-log {
   background: white;
-  border: solid black;
 }
 
 .addedTable {
   background: white;
-  border: solid black;
   position: relative;
   right: 20px;
 }
 
 .toAboutLink {
   color: black;
+  position: relative;
+  left: 190px;
+  top: 10px;
+}
+
+.toLogLink {
+  color: black;
+  position: relative;
+  left: 190px;
+  bottom: 15px;
 }
 
 .deletebtn {
@@ -78,9 +110,6 @@ input {
   border-radius: 15px;
 }
 
-.yingyangBlk {
-
-}
-
-.yingyangWht {
+.logsTitle {
+  margin-top: 20px;
 }

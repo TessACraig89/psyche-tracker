@@ -79,15 +79,15 @@ The Minimum Viable Product version of the Psyche Tracker web app is a much simpl
  ### Wireframes
 
  #### About Page
- ![About Page](images/about.png)
+ ![About Page](./src/static/images/about.png)
 
  #### Logs Page
- ![Logs Page](images/log.png)
+ ![Logs Page](./src/static/images/log.png)
 
  #### Edit Log View
- ![Edit Log View](images/edit-log.png)
+ ![Edit Log View](./src/static/images/edit-log.png)
 
  #### New Log View
- ![New Log View](images/new-log.png)
+ ![New Log View](./src/static/images/new-log.png)
 
  > To learn more about the developer of Psyche Tracker, Tess Craig, visit her [Linkedin](https://www.linkedin.com/in/tessashleycraig/) and view her other [Github](https://github.com/TessACraig89) projects.
