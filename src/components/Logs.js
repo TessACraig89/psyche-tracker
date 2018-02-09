@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import { Table } from 'reactstrap';
 import firebase from '../config/fire.js';
-import css from '../Logs.css';
+import '../App.css';
 
 class Logs extends Component{
   constructor() {
@@ -211,7 +211,6 @@ class Logs extends Component{
             <header>
                 <div className='wrapper'>
                     <Link class="toAboutLink" to={'/'}>CLICK HERE TO LEARN MORE ABOUT PSYCHE TRACKER</Link>
-                    <h1 class="logsTitle">Logs</h1>
                 </div>
             </header>
             <div className='container'>
@@ -225,7 +224,7 @@ class Logs extends Component{
                           </th>
                           <th>          </th>
                           <th>          </th>
-                          <th><input type="text" name="date" placeholder=" / / " onChange={this.handleDateChange} value={this.state.date}/></th>
+                          <th><input type="text" name="date" placeholder="/ / " onChange={this.handleDateChange} value={this.state.date}/></th>
                           <th>          </th>
                           <th>          </th>
                           <th></th>
@@ -242,13 +241,13 @@ class Logs extends Component{
                           <td>Stress</td>
                         </tr>
                         <tr> {/* reference column rating data */}
-                          <td><input type="text" name="rating1" placeholder="rating1" onChange={this.handleRating1Change} value={this.state.rating1}/></td>
-                          <td><input type="text" name="rating2" placeholder="rating2" onChange={this.handleRating2Change} value={this.state.rating2}/></td>
-                          <td><input type="text" name="rating3" placeholder="rating3" onChange={this.handleRating3Change} value={this.state.rating3}/></td>
-                          <td><input type="text" name="rating4" placeholder="rating4" onChange={this.handleRating4Change} value={this.state.rating4}/></td>
-                          <td><input type="text" name="rating5" placeholder="rating5" onChange={this.handleRating5Change} value={this.state.rating5}/></td>
-                          <td><input type="text" name="rating6" placeholder="rating6" onChange={this.handleRating6Change} value={this.state.rating6}/></td>
-                          <td><input type="text" name="rating7" placeholder="rating7" onChange={this.handleRating7Change} value={this.state.rating7}/></td>
+                          <td>Rating:<input type="text" name="rating1" placeholder="rating1" onChange={this.handleRating1Change} value={this.state.rating1}/></td>
+                          <td>Rating:<input type="text" name="rating2" placeholder="rating2" onChange={this.handleRating2Change} value={this.state.rating2}/></td>
+                          <td>Rating:<input type="text" name="rating3" placeholder="rating3" onChange={this.handleRating3Change} value={this.state.rating3}/></td>
+                          <td>Rating:<input type="text" name="rating4" placeholder="rating4" onChange={this.handleRating4Change} value={this.state.rating4}/></td>
+                          <td>Rating:<input type="text" name="rating5" placeholder="rating5" onChange={this.handleRating5Change} value={this.state.rating5}/></td>
+                          <td>Rating:<input type="text" name="rating6" placeholder="rating6" onChange={this.handleRating6Change} value={this.state.rating6}/></td>
+                          <td>Rating:<input type="text" name="rating7" placeholder="rating7" onChange={this.handleRating7Change} value={this.state.rating7}/></td>
                         </tr>
                         <tr>  {/* reference column comment data */}
                           <td>Comment: <input type="text" name="comment1" placeholder="comment1" onChange={this.handleComment1Change} value={this.state.comment1}/></td>
@@ -263,6 +262,7 @@ class Logs extends Component{
                     </Table>
                   </form>
               </section>
+              <h1 class="logsTitle">Logs</h1>
               <section className='display-log'>
                 <div className='wrapper'>
                   <ul>

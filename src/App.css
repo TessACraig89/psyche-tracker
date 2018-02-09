@@ -1,32 +1,40 @@
 .App {
   text-align: center;
+  background-color: #bbabfc;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.header {
+  border: solid 2px red;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.resources {
+  width: 30%;
+  border: solid 2px blue;
   padding: 20px;
-  color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.resourcesTitle {
+  border: solid black 2px;
 }
 
-.App-intro {
-  font-size: large;
+.about {
+  width: 70%;
+  border: solid black 2px;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+ul {
+  list-style-type: none;
 }
 
-.resourcesList {
-  list-style: none;
+input {
+  width: 100%;
+}
+
+.table-responsive {
+  background: white;
+  border: solid black;
 }
