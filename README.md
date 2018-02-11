@@ -10,7 +10,7 @@ Psyche Tracker is a personal logger and tracker for one's emotional and mental h
 
 - [React Router](https://reacttraining.com/react-router/web/guides/philosophy)
 
-- [Javascript] (https://www.javascript.com/)
+- [Javascript](https://www.javascript.com/)
 
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
@@ -20,45 +20,27 @@ The Minimum Viable Product version of the Psyche Tracker web app is a much simpl
 
  ### User Stories
 
-  - As a user, I want to be able to create a new log.
+  - As a user, I want to be able to: 
+  
+    - create a new log
 
-  - As a user, I want to be able to choose a date for my log.
+    - choose a date for my log
 
-  - As a user, I want to be able to edit my logs.
+    - edit my logs
 
-  - As a user, I want to be able to save changes that I've made to my logs.
+    - save changes that I've made to my logs
 
-  - As a user, I want to be able to delete logs.
+    - delete logs
 
-  - As a user, I want to be able to choose a number between 1 and 10 to represent my emotional and mental levels for that day regarding :
+    - choose a number between 1 and 10 to represent my emotional and mental levels for that day
 
-      - Exhaustion
+    - comment on each of the levels listed above
 
-      - Hunger
+    - edit my comments
 
-      - Anxiety
+    - view a chart for each level listed above that tracks the fluctuation between each of my logs
 
-      - Anger
-
-      - Mania
-
-      - Depression
-
-      - Stress
-
-  - As a user, I want to be able to comment on each of the levels listed above.
-
-  - As a user, I want to be able to edit my comments.
-
-  - As a user, I want to be able to view a chart for each level listed above that tracks the fluctuation between each of my logs.
-
-  - As a user, I want to be able to view a list of links to various resources, such as:
-
-      - [Psychology Today](https://www.psychologytoday.com/)
-
-      - [National Suicide Prevention Lifeline](https://suicidepreventionlifeline.org/) 1-800-273-8255
-
-      - [National Domestic Violence Hotline](http://www.thehotline.org/) 1-800-799-7233
+    - view a list of links to various resources 
 
  ### Wireframes
 
@@ -76,14 +58,12 @@ The Minimum Viable Product version of the Psyche Tracker web app is a much simpl
  
  ## Work In Progress
  
-  - As a user, I want to be able to edit my logs.
+  - editing functionality
 
-  - As a user, I want to be able to save changes that I've made to my logs.
-  
-  - As a user, I want to be able to edit my comments.
+  - update funtionality 
 
-  - As a user, I want to be able to view a chart for each level listed above that tracks the fluctuation between each of my logs.
+  - charts for each level listed that tracks the fluctuation between each log
 
-- As a user, I want to be able to choose a number between 1 and 10 to represent my emotional and mental levels for that day.
+  - number stepper for ratings
 
  > To learn more about the developer of Psyche Tracker, Tess Craig, visit her [Linkedin](https://www.linkedin.com/in/tessashleycraig/) and view her other [Github](https://github.com/TessACraig89) projects.
