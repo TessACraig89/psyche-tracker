@@ -4,15 +4,15 @@ Psyche Tracker is a personal logger and tracker for one's emotional and mental h
 
 ## Technologies 
 
-- [Firebase](https://firebase.google.com/)
+- [Firebase](https://firebase.google.com/) - Firebase is a backend platform for building Web, Android and IOS applications, it offers a real time database, different APIs, multiple authentication types and hosting.
 
-- [React](https://reactjs.org/)
+- [React](https://reactjs.org/) - A library used to craft modern day UI and create views for the front-end in web, client and native applications.
 
-- [React Router](https://reacttraining.com/react-router/web/guides/philosophy)
+- [React Router](https://reacttraining.com/react-router/web/guides/philosophy) - A React.js system that specifies which components should display at each URL.
 
-- [Javascript](https://www.javascript.com/)
+- [Javascript](https://www.javascript.com/) - An object-oriented computer programming language commonly used to create interactive effects within web browsers.
 
-- [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) - A syntax intended to be used by preprocessors to transform HTML-like text found in JavaScript files into standard JavaScript objects that a JavaScript engine will parse.
 
 ## Minimum Viable Product 
 
