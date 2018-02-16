@@ -20,7 +20,7 @@ The Minimum Viable Product version of the Psyche Tracker web app is a much simpl
 
  ### User Stories
 
-  - As a user, I want to be able to: 
+  As a user, I want to be able to: 
   
     - create a new log
 
