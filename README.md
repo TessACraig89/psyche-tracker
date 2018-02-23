@@ -14,6 +14,8 @@ Psyche Tracker is a personal logger and tracker for one's emotional and mental h
 
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) - A syntax intended to be used by preprocessors to transform HTML-like text found in JavaScript files into standard JavaScript objects that a JavaScript engine will parse.
 
+- [CSS3](http://www.css3.info/) - Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language.
+
 ## Minimum Viable Product 
 
 The Minimum Viable Product version of the Psyche Tracker web app is a much simplified version of what the final app will be. What follows is the specs for the minimal viable product. A central Kanban board tracking development is located here on [Trello](https://trello.com/b/W5GjPpR9/project-3). For the most up to date developments, take a quick look inside.
