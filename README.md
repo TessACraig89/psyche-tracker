@@ -10,8 +10,6 @@ Check out the [Psyche Tracker Demo](https://psyche-tracker.firebaseapp.com/) her
 
 - [React](https://reactjs.org/) - A library used to craft modern day UI and create views for the front-end in web, client and native applications.
 
-- [React Router](https://reacttraining.com/react-router/web/guides/philosophy) - A React.js system that specifies which components should display at each URL.
-
 - [Javascript](https://www.javascript.com/) - An object-oriented computer programming language commonly used to create interactive effects within web browsers.
 
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) - A syntax intended to be used by preprocessors to transform HTML-like text found in JavaScript files into standard JavaScript objects that a JavaScript engine will parse.
