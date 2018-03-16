@@ -6,7 +6,6 @@
   color: black;
   font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 0px;
-  height: 750px;
 }
 /* HEADER */
 .header {
@@ -55,6 +54,7 @@ ul {
   width: 70%;
   padding: 20px;
   font-weight: bold;
+  height: 550px;
 }
 
 .devLink {
