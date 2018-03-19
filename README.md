@@ -4,7 +4,9 @@ Psyche Tracker is a personal logger and tracker for one's emotional and mental h
 
 Check out the [Psyche Tracker Demo](https://psyche-tracker.firebaseapp.com/) here!
 
-## Technologies 
+ ![Edit Log View](./src/static/images/edit-log.png)
+
+## Technologies
 
 - [Firebase](https://firebase.google.com/) - Firebase is a backend platform for building Web, Android and IOS applications, it offers a real time database, different APIs, multiple authentication types and hosting.
 
@@ -18,22 +20,9 @@ Check out the [Psyche Tracker Demo](https://psyche-tracker.firebaseapp.com/) her
 
 - [Bootstrap4](https://getbootstrap.com/) - A front-end library for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.
 
-## Minimum Viable Product 
+## Minimum Viable Product
 
 The Minimum Viable Product version of the Psyche Tracker web app is a much simplified version of what the final app will be. What follows is the specs for the minimal viable product. A central Kanban board tracking development is located here on [Trello](https://trello.com/b/W5GjPpR9/project-3). For the most up to date developments, take a quick look inside.
 
- ### Wireframes
 
- #### About Page
- ![About Page](./src/static/images/about.png)
-
- #### Logs Page
- ![Logs Page](./src/static/images/log.png)
-
- #### Edit Log View
- ![Edit Log View](./src/static/images/edit-log.png)
-
- #### New Log View
- ![New Log View](./src/static/images/new-log.png)
- 
  > To learn more about the developer of Psyche Tracker, Tess Craig, visit her [Linkedin](https://www.linkedin.com/in/tessashleycraig/) and view her other [Github](https://github.com/TessACraig89) projects.
