@@ -210,17 +210,17 @@ class Logs extends Component{
           <div className='logPage'>
             <header>
                 <div className='wrapper'>
-                    <Link class="toAboutLink" to={'/'}>CLICK HERE TO LEARN MORE ABOUT PSYCHE TRACKER</Link>
+                    <Link class="toLink" to={'/'}>LEARN MORE ABOUT PSYCHE TRACKER</Link>
                 </div>
             </header>
 
-            <h1 className="addTitle">Add To Your Logs</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys<br></br> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make<br></br> a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
+            <h1 className="Title">Add To Your Logs</h1>
+            <p className="logsP">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
             <div className='tbContainer'>
               <section className='add-log'>
                   <form onSubmit={this.handleSubmit}>
                     <Table responsive>
-                      <thead>
+                      <tbody>
                         <tr>
                           <th>
                             <button className="addBtn">ADD</button>
@@ -232,8 +232,7 @@ class Logs extends Component{
                           <th>          </th>
                           <th></th>
                         </tr>
-                      </thead>
-                      <tbody>
+
                         <tr>
                           <td>Exhaustion</td>
                           <td>Hunger</td>

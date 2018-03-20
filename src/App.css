@@ -62,7 +62,7 @@ ul {
   padding: 10px;
   position: relative;
   right: 10px;
-  
+
 }
 
 .listItem:hover {
@@ -80,7 +80,7 @@ ul {
   background-color: white;
 }
 
-.aboutTitle{
+.Title{
   margin-top: 70px;
   border-bottom: 10px dotted #bbabfc;
   margin-bottom: 20px;
@@ -134,11 +134,11 @@ input {
   width: 70%;
   font-weight: bold;
   background-color: white;
+  padding-left: 15px;
+padding-top: 20px;
 }
 
-.addTitle {
-  margin-top: 20px;
-}
+
 
 .add-log {
   background: white;
@@ -148,12 +148,31 @@ input {
 }
 
 .addedTable {
-  background: white;
+  /* background: white; */
   position: relative;
   right: 20px;
-  background: white;
+  /* background: white; */
   border: solid black 2px;
   border-radius: 10px;
+}
+Table {
+   background-color: black;
+}
+tbody tr:nth-child(odd) {
+  background-color: #a899e2;
+}
+tbody tr:nth-child(even) {
+  background-color: #bbabfc;
+}
+
+.logsP {
+  font-size: 20px;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+
 }
 
 .toAboutLink {
@@ -163,7 +182,7 @@ input {
   top: 10px;
 }
 
-.toLogLink {
+.toLink {
   color: black;
     position: relative;
     left: 190px;
@@ -176,7 +195,7 @@ input {
     border-radius: 50px;
 }
 
-.toLogLink:hover {
+.toLink:hover {
   color: #bbabfc;
     position: relative;
     left: 190px;
