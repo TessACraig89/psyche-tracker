@@ -4,7 +4,7 @@ Psyche Tracker is a personal logger and tracker for one's emotional and mental h
 
 Check out the [Psyche Tracker Demo](https://psyche-tracker.firebaseapp.com/) here!
 
- ![Edit Log View](./src/static/images/edit-log.png)
+ ![Edit Log View](./src/static/images/psyche2.png)
 
 ## Technologies
 
