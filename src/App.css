@@ -27,7 +27,12 @@ background-color: #bbabfc;
   right: 500px;
 
 }
-
+.logsTitle {
+border-bottom: 10px dotted rgb(187, 171, 252);
+margin-top: 30px;
+margin-bottom: 20px;
+padding-bottom: 5px;
+}
 .yingyangWht {
   position: relative;
   left: 500px;
@@ -35,26 +40,45 @@ background-color: #bbabfc;
 }
 /* RESOURCES */
 .resources {
-  width: 30%;
-    padding: 50px;
+  width: 25%;
+  padding: 30px;
     font-weight: bold;
     margin-top: 0px;
     background: white;
 }
-
+.resourcesList {
+  list-style-type: none;
+    font-size: 18px;
+    right: 20px;
+    border: 5px solid #000;
+    border-radius: 50px;
+    left: 2px;
+}
 .resourcesTitle {
   margin-top: 70px;
 
 }
 
-ul {
-  list-style-type: none;
+.logsList {
+list-style-type: none;
   font-size: 18px;
   position: relative;
-  right: 20px;
-  border: black solid 5px;
+
+  top: 10px;
   border-radius: 50px;
-  left: 2px;
+}
+
+ul {
+
+}
+
+tr {
+  background-color: #bbabfc;
+  border: black 2px solid;
+}
+
+thead {
+  border: black 2px solid;
 }
 
 .listItem {
@@ -131,7 +155,7 @@ input {
 }
 
 .logPage {
-  width: 70%;
+  width: 75%;
   font-weight: bold;
   background-color: white;
   padding-left: 15px;
@@ -141,28 +165,34 @@ padding-top: 20px;
 
 
 .add-log {
-  background: white;
-  border: solid black 2px;
-  border-radius: 10px;
+  background: black;
+  width: fit-content;
   margin-left: 10px;
+    border-top: 15px solid #000;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
 }
 
 .addedTable {
-  /* background: white; */
-  position: relative;
-  right: 20px;
-  /* background: white; */
-  border: solid black 2px;
-  border-radius: 10px;
+
+
+background: black;
+    margin-left: 10px;
+    border-top: 15px solid #000;
+    border-left: 5px solid black;
+width: fit-content;
+    border-right: 5px solid black;
 }
 Table {
    background-color: black;
 }
 tbody tr:nth-child(odd) {
   background-color: #a899e2;
+    border: black solid 2px;
 }
 tbody tr:nth-child(even) {
   background-color: #bbabfc;
+border: black solid 2px;
 }
 
 .logsP {
@@ -183,9 +213,10 @@ tbody tr:nth-child(even) {
 }
 
 .toLink {
+
   color: black;
     position: relative;
-    left: 190px;
+    left: 13%;
     bottom: 15px;
     font-size: 20px;
     top: 20px;
@@ -218,6 +249,9 @@ tbody tr:nth-child(even) {
   border-radius: 15px;
 }
 
-.logsTitle {
-  margin-top: 20px;
+.Title {
+  margin-top: 70px;
+    border-bottom: #bbabfc dotted 10px;
+    padding: 4px;
+
 }

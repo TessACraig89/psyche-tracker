@@ -267,13 +267,13 @@ class Logs extends Component{
               <h1 class="logsTitle">Logs</h1>
               <section className='display-log'>
                 <div className='wrapper'>
-                  <ul>
+                  <ul className="logsList">
                     {this.state.logs.map((log) => {
                         return (
                           <li key={log.id}>
                           <div className="addedTable">
                             <Table responsive>
-                              <thead>
+                              <tbody>
                                 <tr>
                                   <th>
                                     <button className="deletebtn" onClick={() => this.removeLog(log.id)}>DELETE</button>
@@ -285,8 +285,7 @@ class Logs extends Component{
                                   <th>          </th>
                                   <th>          </th>
                                 </tr>
-                              </thead>
-                              <tbody>
+                              
                                 <tr>
                                   <td>Exhaustion</td>
                                   <td>Hunger</td>
