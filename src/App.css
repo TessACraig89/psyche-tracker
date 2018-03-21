@@ -97,7 +97,7 @@ thead {
 
 /* ABOUT PAGE */
 .about {
-  width: 70%;
+  width: 75%;
   padding: 20px;
   font-weight: bold;
   height: 860px;
@@ -229,7 +229,7 @@ border: black solid 2px;
 .toLink:hover {
   color: #bbabfc;
     position: relative;
-    left: 190px;
+    left: 13%;
     bottom: 15px;
     font-size: 20px;
     top: 20px;
