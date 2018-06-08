@@ -87,6 +87,16 @@ thead {
   padding: 10px;
   position: relative;
   right: 10px;
+}
+
+.listItemNumber {
+  color: black;
+
+}
+
+.listItemNumber:hover {
+  color: #bbabfc;
+  text-decoration: none;
 
 }
 
