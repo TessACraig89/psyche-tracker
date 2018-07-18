@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: #bbabfc;
+  /* background-color: #bbabfc; */
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   color: black;
@@ -129,11 +130,6 @@ p.aboutP {
   left: 10%;
 }
 
-.aboutPar2 {
-  position: relative;
-  top: 30px;
-  font-size: 20px;
-}
 
 .devLink:hover {
   color: #bbabfc;
