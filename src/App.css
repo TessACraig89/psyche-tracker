@@ -54,6 +54,7 @@ position: relative;
     border: 5px solid #000;
     border-radius: 50px;
     left: 2px;
+    display: inline-block;
 }
 .resourcesTitle {
   margin-top: 100px;
