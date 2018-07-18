@@ -15,14 +15,14 @@
 background-color: #bbabfc;
 }
 
-.headerText {
+#headerText {
   width: 60%;
   position: relative;
   bottom: 140px;
   left: 250px;
 }
 
-.yingyangBlk {
+#yingyangBlk {
   position: relative;
   right: 500px;
 
@@ -33,7 +33,7 @@ margin-top: 30px;
 margin-bottom: 20px;
 padding-bottom: 5px;
 }
-.yingyangWht {
+#yingyangWht {
   position: relative;
   left: 500px;
   bottom: 295px;
@@ -122,7 +122,10 @@ thead {
 }
 
 p.aboutP {
-  font-size: 20px;
+  font-size: 30px;
+  width: 80%;
+  position: relative;
+  left: 10%;
 }
 
 .aboutPar2 {

@@ -6,12 +6,12 @@ class Header extends Component{
     return (
       <div className="header">
         <header>
-            <img className="yingyangBlk" src={require("../static/images/heart&brain_black.png")}></img>
-          <div className="headerText">
-            <h1 class="headerTitle">Psyche Tracker</h1>
-            <h2 class="headerSubtitle">{"A personal logger and tracker of one's emotional and mental health"}</h2>
+            <img id="yingyangBlk" src={require("../static/images/heart&brain_black.png")}></img>
+          <div id="headerText">
+            <h1 className="headerTitle">Psyche Tracker</h1>
+            <h2 id="headerSubtitle">{"A personal logger and tracker of one's emotional and mental health"}</h2>
           </div>
-            <img className="yingyangWht" src={require("../static/images/heart&brain_white.png")}></img>
+            <img id="yingyangWht" src={require("../static/images/heart&brain_white.png")}></img>
         </header>
       </div>
     )
