@@ -242,7 +242,7 @@ border: black solid 2px;
   text-align: center;
   position: relative;
   display: inline-block;
-  left: 20%;
+  left: 13%;
 }
 
 button:focus {outline:0;}
@@ -250,15 +250,11 @@ input:focus {outline:0;}
 
 .toLink:hover {
   color: #bbabfc;
-    position: relative;
-    left: 13%;
-    bottom: 15px;
-    font-size: 20px;
-    top: 20px;
-    border: 5px solid #bbabfc;
-    padding: 10px;
-    background-color: black;
-    border-radius: 50px;
+  position: relative;
+  border: 5px solid #bbabfc;
+  padding: 10px;
+  background-color: black;
+  border-radius: 50px;
   text-decoration: none;
 }
 .deletebtn {
