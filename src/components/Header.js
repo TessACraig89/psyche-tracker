@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
 import '../App.css';
+import {
+  Box,
+  Card,
+  Image,
+  Heading,
+  Text
+} from 'rebass';
 
 // <h2 id="headerSubtitle">{"A personal logger and tracker of one's emotional and mental health"}</h2>
 class Header extends Component{
